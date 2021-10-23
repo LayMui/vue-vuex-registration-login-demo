@@ -16,7 +16,7 @@
                 <label for="username">Username</label>
                 <input type="text" v-model="user.username" v-validate="'required'" data-testid="username" name="username" class="form-control" :class="{ 'is-invalid': submitted && errors.has('username') }" />
                 <div v-if="submitted && errors.has('username')" class="invalid-feedback">{{ errors.first('username') }}</div>
-            </div>≈çç
+            </div>
             <div class="form-group">
                 <label htmlFor="password">Password</label>
                 <input type="password" v-model="user.password" v-validate="{ required: true, min: 6 }" data-testid="password" name="password" class="form-control" :class="{ 'is-invalid': submitted && errors.has('password') }" />
